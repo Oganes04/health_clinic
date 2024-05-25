@@ -1,0 +1,424 @@
+@font-face {
+    font-family: DN-Light;
+    src: url("../fonts/dnpro_regular.otf");
+}
+
+
+@font-face {
+    font-family: DN-Regular;
+    src: url("../fonts/dnpro_regular.otf");
+}
+
+@font-face {
+    font-family: DN-Medium;
+    src: url("../fonts/DINPro-Medium.ttf");
+}
+
+@font-face {
+    font-family: DN-Bold;
+    src: url("../fonts/DINPro-Bold.ttf");
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.header {
+    box-shadow: 0 2px 8px 0 rgba(27, 25, 56, 0.05);
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.logo {
+    margin-right: 65px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li a{
+    font-family: DN-Regular;
+    font-size: 14px;
+    color: #A1A6A8;
+    line-height: 160%;
+    cursor: pointer;
+}
+
+.header__icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: auto;
+}
+
+.header__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 100%;
+    border: 1px solid #EAEAEA;
+    cursor: pointer;
+}
+
+.offer {
+    height: 451px;
+    background: linear-gradient(45deg, #FCDECF, #80D0F8);
+}
+
+.offer__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding-top: 64px;
+}
+
+.offer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.offer__info h1 {
+    font-family: DN-Regular;
+    font-size: clamp(40px, 3.75vw, 54px);
+    color: #FFFFFF;
+    margin-bottom: 35px;
+    text-align: right;
+}
+
+.offer__info h2 {
+    text-align: right;
+    font-family: DN-Regular;
+    font-size: clamp(18px, 1.66vw, 24px);
+    color: #FFFFFF;
+    margin-bottom: 35px;
+    max-width: 550px;
+    margin-left: auto;
+}
+
+.offer__info .button {
+    padding: 12px 24px;
+    background-color: #F26722;
+    border-radius: 22px;
+    color: #FFFFFF;
+    font-family: DN-Light;
+    cursor: pointer;
+}
+
+.appointment__inner {
+    padding-left: 232px;
+    padding-top: 73px;
+    padding-right: 69px;
+    max-width: 1340px;
+}
+
+
+.appointment__inner h2 {
+    font-family: DN-Bold;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.appointment__inner span {
+    font-family: DN-Light;
+    font-size: 13px;
+    color: #54607A;
+}
+
+.appointment__dropdown {
+    position: relative;
+    margin-top: 18px;
+    padding: 10px;
+    font-family: DN-Medium;
+    font-size: 13px;
+    border-radius: 12px;
+    background-color: #F0F2F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.appointment__dropdown:hover {
+    background-color: #E1E3E9;
+}
+
+.dropdown__link-selector {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+  
+  .dropdown__link-selector:hover {
+    cursor: pointer;
+}
+  
+.dropdown__link-selector svg {
+    transition: transform 0.4s ease-in-out;
+}
+  
+.rotate_row {
+    transform: rotate(-180deg);
+    transition: transform 0.3s ease-in-out;
+}
+  
+.dropdown__content-selector {
+    max-height: 200px;
+    overflow-y: scroll;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 1200;
+    border: 1px solid #E2E8F0;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: none !important;
+    display: none;
+}
+
+.dropdown__content-selector::-webkit-scrollbar {
+    width: 0px;
+    height: 200px;               /* ширина scrollbar */
+}
+.dropdown__content-selector::-webkit-scrollbar-track {
+    background: #FFFFFF;        /* цвет дорожки */
+}
+.dropdown__content-selector::-webkit-scrollbar-thumb {
+    background-color: #EFF9FE;    /* цвет плашки */
+    border-radius: 4px;       /* закругления плашки */
+     
+}
+  
+.dropdown__content-selector p:first-child {
+    border-radius: 15px 15px 0 0;
+}
+  
+.dropdown__content-selector p:last-child {
+    border-radius: 0 0 15px 15px;
+}
+  
+.dropdown__content-selector p {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    font-family: "Gilroy-Regular";
+    font-weight: normal;
+    font-size: 16px;
+    color: #505759;
+    transition: all 0.4s ease;
+}
+  
+.dropdown__content-selector p:hover {
+    background-color: #EFF9FE;
+}
+
+
+hr {
+    height: 1px;
+    background-color: #071C47;
+    opacity: 0.12;
+    margin-bottom: 25px;
+}
+
+.appointment__doctors {
+    margin-bottom: 18px;
+}
+
+.doctor__items {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.doctor__item {
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid  #E1E4E9;
+    width: fit-content;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.doctor__info-row {
+    display: flex;
+    align-items: center;
+}
+
+.doctor__info h3 {
+    font-family: DN-Medium;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.doctor__info p {
+    font-family: DN-Light;
+    font-size: 13px;
+    color: #8B93A5;
+}
+
+.doctor__info-row.first-row {
+    margin-bottom: 16px;
+}
+
+.doctor__info-row.second-row p {
+    color: #000000;
+    margin-bottom: 13px;
+}
+
+.doctor__info-row.third-row {
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+
+
+.doctor__info-row.third-row span {
+    font-family: DN-Regular;
+    font-size: 13px;
+    color: #21ACF2;
+    cursor: pointer;
+}
+
+.doctor__dates {
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid #CAD5F4;
+}
+
+.doctor__date {
+    padding: 9px;
+    font-family: DN-Regular;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+}
+
+.doctor__date-active {
+    background-color: #EFF9FE;
+    border-radius: 7px;
+}
+
+.doctor__date:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 1px;
+    background-color: #EFF9FE;
+    right: 0;
+    top: 8px;
+}
+
+.doctor__times {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.doctor__time {
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: #21ACF2;
+    font-family: DN-Regular;
+    font-size: 14px;
+    padding: 7px 11px;
+    cursor: pointer;
+}
+
+
+.appointment__button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 0;
+    border-radius: 12px;
+    border:  1px solid #E2E8F0;
+    font-family: DN-Regular;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+
+form {
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 52px;
+}
+
+.form__input {
+    flex: 1;
+}
+
+.form__input p {
+    font-family: DN-Medium;
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+
+.form__input input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #D3D9DE;
+    font-family: DN-Medium;
+    font-size: 16px;
+}
+
+form button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: #FBD9C7;
+    border-radius: 12px;
+    transition: all .3s ease;
+}
+
+form button:hover {
+    background-color: #F26722;
+}
+
+form button span {
+    font-family: DN-Light !important;
+    font-size: 16px !important;
+    color: #ffffff !important;
+}
+
+@media only screen and (max-width: 1440px) {
+    .appointment__inner {
+        padding-right: 0;
+        padding-left: 0;
+        max-width: 1040px;
+    }
+}
